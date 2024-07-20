@@ -21,7 +21,10 @@
                 <% files.forEach(function(file) { %>
                     <div class="w-72 px-4 py-5 bg-green-900 rounded-md">
                         <h1><%= file %></h1>
-                        <a class="text-blue-400" href="/file/<%= file %>">Read More</a>
+                        <div class="flex justify-between ">
+                            <a class="text-blue-400" href="/file/<%= file %>">Read More</a>
+                            <a class="text-blue-400" href="/edit/<%= file %>">Edit</a>
+                        </div>
                     </div>
                 <% }); %>
             <% } else { %>

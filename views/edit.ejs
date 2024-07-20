@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main w-full min-h-screen bg-green-300 text-white p-10">
+        <a href="/"><button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-7">Go Back</button></a>
+            <form action="/edit" method="post">
+                <input type="text" name="title" class="block mt-2 px-5 py-4 bg-green-900 w-1/4 rounded-md" placeholder="Previous Task" required value="<%= filename%>"/>
+                <input type="text" name="title" class="block mt-2 px-5 py-4 bg-green-900 w-1/4 rounded-md" placeholder="New Task" required>
+                <input type="submit" value="Update changes" class="block mt-7 px-5 py-4 bg-green-900 rounded-md bg-red-500">
+            </form>
+    </div>
+</body>
+</html>
